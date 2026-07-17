@@ -572,7 +572,7 @@ public class GUI extends javax.swing.JFrame {
                 btnInicioActionPerformed(evt);
             }
         });
-        jPanel3.add(btnInicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 70, 180, -1));
+        jPanel3.add(btnInicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 40, 180, -1));
 
         btnVentanilla.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         btnVentanilla.setText("Ventanilla");
@@ -581,7 +581,7 @@ public class GUI extends javax.swing.JFrame {
                 btnVentanillaActionPerformed(evt);
             }
         });
-        jPanel3.add(btnVentanilla, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 180, 180, -1));
+        jPanel3.add(btnVentanilla, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, 180, -1));
 
         btnCatalogo.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         btnCatalogo.setText(" Vehículos");
@@ -590,7 +590,7 @@ public class GUI extends javax.swing.JFrame {
                 btnCatalogoActionPerformed(evt);
             }
         });
-        jPanel3.add(btnCatalogo, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 290, 180, -1));
+        jPanel3.add(btnCatalogo, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 260, 180, -1));
 
         btnHistorial.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         btnHistorial.setText("Historial");
@@ -599,7 +599,7 @@ public class GUI extends javax.swing.JFrame {
                 btnHistorialActionPerformed(evt);
             }
         });
-        jPanel3.add(btnHistorial, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 400, 180, -1));
+        jPanel3.add(btnHistorial, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 370, 180, -1));
 
         btnArbol.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         btnArbol.setText(" Gestion");
@@ -608,7 +608,7 @@ public class GUI extends javax.swing.JFrame {
                 btnArbolActionPerformed(evt);
             }
         });
-        jPanel3.add(btnArbol, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 500, 180, -1));
+        jPanel3.add(btnArbol, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 480, 180, -1));
 
         btnSalir.setText(" Salir");
         btnSalir.addActionListener(new java.awt.event.ActionListener() {
@@ -616,7 +616,7 @@ public class GUI extends javax.swing.JFrame {
                 btnSalirActionPerformed(evt);
             }
         });
-        jPanel3.add(btnSalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 590, 110, -1));
+        jPanel3.add(btnSalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 570, 110, -1));
 
         jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(14, 67, 220, 630));
 
@@ -663,23 +663,15 @@ public class GUI extends javax.swing.JFrame {
         jPanel11Layout.setHorizontalGroup(
             jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel11Layout.createSequentialGroup()
+                .addContainerGap()
                 .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel11Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(txtNombres, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(txtApellidos, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addComponent(txtNombres, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(txtApellidos, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel11Layout.createSequentialGroup()
                         .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel11Layout.createSequentialGroup()
-                                .addContainerGap()
-                                .addComponent(jLabel10))
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel11Layout.createSequentialGroup()
-                                .addContainerGap()
-                                .addComponent(jLabel11))
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel11Layout.createSequentialGroup()
-                                .addContainerGap()
-                                .addComponent(jLabel9)))
+                            .addComponent(jLabel10, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel11, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel9, javax.swing.GroupLayout.Alignment.LEADING))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addGap(74, 74, 74))
             .addGroup(jPanel11Layout.createSequentialGroup()
@@ -1144,12 +1136,12 @@ public class GUI extends javax.swing.JFrame {
         pnlCardEspera.setLayout(pnlCardEsperaLayout);
         pnlCardEsperaLayout.setHorizontalGroup(
             pnlCardEsperaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnlCardEsperaLayout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlCardEsperaLayout.createSequentialGroup()
                 .addContainerGap(109, Short.MAX_VALUE)
                 .addComponent(jLabel7)
                 .addGap(118, 118, 118))
             .addGroup(pnlCardEsperaLayout.createSequentialGroup()
-                .addGap(129, 129, 129)
+                .addGap(131, 131, 131)
                 .addComponent(lblEnEspera)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -1183,7 +1175,7 @@ public class GUI extends javax.swing.JFrame {
                         .addGap(37, 37, 37)
                         .addComponent(jLabel5))
                     .addGroup(pnlCardFlotaLayout.createSequentialGroup()
-                        .addGap(114, 114, 114)
+                        .addGap(98, 98, 98)
                         .addComponent(lblTotalFlota)))
                 .addContainerGap(55, Short.MAX_VALUE))
         );
@@ -1217,7 +1209,7 @@ public class GUI extends javax.swing.JFrame {
                         .addGap(77, 77, 77)
                         .addComponent(jLabel6))
                     .addGroup(pnlCardRentadosLayout.createSequentialGroup()
-                        .addGap(121, 121, 121)
+                        .addGap(118, 118, 118)
                         .addComponent(lblRentados)))
                 .addContainerGap(99, Short.MAX_VALUE))
         );
@@ -1283,7 +1275,7 @@ public class GUI extends javax.swing.JFrame {
         jPanel5Layout.setHorizontalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
-                .addContainerGap(597, Short.MAX_VALUE)
+                .addContainerGap(617, Short.MAX_VALUE)
                 .addComponent(lblEstadoSistema, javax.swing.GroupLayout.PREFERRED_SIZE, 816, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(247, 247, 247))
         );
@@ -1295,7 +1287,7 @@ public class GUI extends javax.swing.JFrame {
                 .addContainerGap(26, Short.MAX_VALUE))
         );
 
-        jPanel1.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(-3, 715, 1660, -1));
+        jPanel1.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(-3, 715, 1680, -1));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 780));
 
@@ -1395,7 +1387,13 @@ public class GUI extends javax.swing.JFrame {
 
     private void btnLlamarTurnoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLlamarTurnoActionPerformed
         if (lblVentanilla.getText().contains("OCUPADA")) {
+            // Actualiza la barra de estado
             lblEstadoSistema.setText("Error: Debe terminar de atender al cliente actual antes de llamar a otro.");
+            // Lanza el mensaje emergente en el centro de la pantalla
+            javax.swing.JOptionPane.showMessageDialog(this, 
+                    "Ya hay un cliente en la ventanilla.\nDebe terminar su atención antes de llamar al siguiente turno.", 
+                    "Ventanilla Ocupada", 
+                    javax.swing.JOptionPane.WARNING_MESSAGE);
             return;
         }
 
@@ -1406,6 +1404,9 @@ public class GUI extends javax.swing.JFrame {
             lblVentanilla.setText("Ventanilla actual: OCUPADA");
             actualizarTablaCola();
             lblEstadoSistema.setText("Estado: Atendiendo en ventanilla a " + clienteEnAtencion.getNombre());
+
+            btnCatalogo.doClick(); 
+
         } else {
             lblEstadoSistema.setText("Estado: No hay clientes esperando en la agencia.");
             lblClienteActual.setText("--- Ninguno ---");

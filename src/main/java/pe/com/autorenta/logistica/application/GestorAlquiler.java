@@ -16,16 +16,34 @@ public class GestorAlquiler implements java.io.Serializable {
     
     private Cliente clienteEnVentanilla; 
 
-    public GestorAlquiler() {
+   public GestorAlquiler() {
         this.inventario = new ArbolVehiculos();
         this.colaAgencia = new ColaEspera();
         this.historialAlquileres = new PilaBajas();
-        this.clienteEnVentanilla = null; // Inicia vacío
+        this.clienteEnVentanilla = null; 
 
         inventario.insertar(new Vehiculo("T3X-123", "Toyota", "Yaris 2016", 120.0));
         inventario.insertar(new Vehiculo("ABC-999", "Hyundai", "Accent 2020", 150.0));
         inventario.insertar(new Vehiculo("ZXV-555", "Audi", "A4 2023", 300.0));
         inventario.insertar(new Vehiculo("MNO-111", "Chevrolet", "Sail 2019", 100.0));
+
+        
+        // modelos Toyota
+        inventario.insertar(new Vehiculo("KJL-298", "Toyota", "Fortuner 2025", 250.0));
+        inventario.insertar(new Vehiculo("TOY-001", "Toyota", "Corolla 2022", 140.0));
+        inventario.insertar(new Vehiculo("TOY-002", "Toyota", "Hilux 2021", 210.0));
+
+        // modelos Hyundai
+        inventario.insertar(new Vehiculo("HYU-003", "Hyundai", "Tucson 2023", 220.0));
+        inventario.insertar(new Vehiculo("HYU-004", "Hyundai", "Elantra 2021", 160.0));
+
+        // modelos Audi (Gama Alta)
+        inventario.insertar(new Vehiculo("AUD-005", "Audi", "Q5 2022", 350.0));
+        inventario.insertar(new Vehiculo("AUD-006", "Audi", "A3 2021", 280.0));
+
+        // modelos Chevrolet
+        inventario.insertar(new Vehiculo("CHE-007", "Chevrolet", "Tracker 2021", 180.0));
+        inventario.insertar(new Vehiculo("CHE-008", "Chevrolet", "Spark 2018", 90.0));
     }
 
     public ListaVehiculos obtenerCatalogoOrdenadoPorMarca() {
