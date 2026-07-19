@@ -18,6 +18,7 @@ pe\com\autorenta\logistica\presentation\GUI$9.class
 pe\com\autorenta\logistica\presentation\GUI$16.class
 pe\com\autorenta\logistica\infrastructure\structure\GestorPersistencia.class
 pe\com\autorenta\logistica\domain\Vehiculo.class
+pe\com\autorenta\logistica\presentation\GUINlogin$2.class
 pe\com\autorenta\logistica\application\GestorAlquiler.class
 pe\com\autorenta\logistica\infrastructure\structure\PilaBajas.class
 pe\com\autorenta\logistica\presentation\GUI$4.class
