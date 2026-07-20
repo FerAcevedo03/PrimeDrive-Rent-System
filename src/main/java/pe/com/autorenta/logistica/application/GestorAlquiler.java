@@ -86,7 +86,7 @@ public class GestorAlquiler implements java.io.Serializable {
 
 
     public boolean rentarVehiculo(String placa) {
-        // Validamos que haya un cliente siendo atendido
+        // Valida que haya un cliente siendo atendido
         if (this.clienteEnVentanilla == null) {
             return false;
         }
@@ -94,7 +94,7 @@ public class GestorAlquiler implements java.io.Serializable {
         // Ejecuta el método de alquilar
         boolean exito = alquilarVehiculo(placa, this.clienteEnVentanilla);
         
-        // Si logró rentar el auto, la ventanilla vuelve a quedar libre
+        // Si logra rentar el auto, la ventanilla vuelve a quedar libre
         if (exito) {
             this.clienteEnVentanilla = null; 
         }
@@ -102,23 +102,22 @@ public class GestorAlquiler implements java.io.Serializable {
     }
 
     public boolean deshacerUltimaAccion() {
-        // Llama a tu método original
+        // Llama al método original
         return deshacerUltimoAlquiler();
     }
 
     public Vehiculo buscarVehiculo(String placa) {
-        // Usa el método de búsqueda de tu Árbol Binario
+        // Usa el método de búsqueda del Árbol Binario
         return inventario.buscar(placa);
     }
     
     
-   //añadir auto
+   //añade auto
     public void registrarNuevoVehiculo(String placa, String marca, String modelo, double precio) {
         inventario.insertar(new Vehiculo(placa, marca, modelo, precio));
     }
     public void ordenarVehiculosPorPrecio() {
-        // Nota: Si vas a usar el ordenamiento por precio, necesitas tener un método 
-        // "lista.ordenarPorPrecio()" en tu clase ListaVehiculos aplicando el Bubble Sort.
+        //  Se tiene al metodo "lista.ordenarPorPrecio()" en la clase ListaVehiculos aplicando el Bubble Sort
     }
 
 
@@ -131,14 +130,14 @@ public class GestorAlquiler implements java.io.Serializable {
     }
     
    public boolean eliminarVehiculo(String placa) {
-        // Busca el vehículo en tu Árbol Binario (inventario)
+        // Busca el vehículo en el Árbol Binario (inventario)
         Vehiculo v = inventario.buscar(placa);
         
         if (v == null) {
             return false; 
         }
         
-        // No se puede borrar si un cliente lo tiene alquilado
+        // No puede borrar si un cliente lo tiene alquilado
         if (v.getClienteRentado() != null) {
             return false; 
         }
